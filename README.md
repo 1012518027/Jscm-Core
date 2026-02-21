@@ -5,6 +5,33 @@
 JSCM框架是一个基于Java JNA的Windows系统操作框架，提供了丰富的Windows API封装，包括窗口操作、进程线程管理、内存操作、注册表操作、热键驱动等功能。本框架集成了三大模块进行处理，参考了精易模块、超级模块、乐易模块的设计思想，为Java开发者提供了强大的Windows系统底层操作能力。
 
 框架支持X86和X64平台，包含DD键鼠驱动、幽灵键鼠驱动等硬件抽象层功能，同时提供了完整的编码转换工具类，支持UTF-8、Unicode、ASCII等多种编码格式的相互转换。框架还集成了CapStone反汇编引擎，支持内存特征码搜索和反汇编分析功能。
+QQ群：128828632  
+```java
+        System.out.println("温馨提示:java.exe | javac.exe | javaw.exe 请设置成管理员 win10禁用驱动签名  购买联系：1012518027@qq.com  官方QQ群:128828632");
+        System.out.println("温馨提示:请根据SDK版本如果有标注X64 和X86 请使用对应的SDK版本使用,否则无法使用!");
+        System.out.println("关于Ascii 转UTF-8 取值常用的：ByteUtils.bytesArrayToAsciiWideString |  asciiWideStringToBytesArray  ");
+        System.out.println("关于Unicode  转UTF-8 取值常用的：ByteUtils.bytesArrayToUtf8WideString | charsArrayToUtf8WideString1 |  charsArrayToUtf8WideString2 |  utf8WideStringToCharsArray");
+        System.out.println("ByteUtils.indexOf  支持 字节 和 字符");
+        System.out.println("ByteUtils.equalsByteArray | equalsCharArray  判断匹配");
+        System.out.println("关于API的选用！尽量选用 U 码 例如 MessageBoxExW  尾部带  W  的就是U码 ");
+        System.out.println("关于进制转换 也有相应的方案 ByteUtils hexToInt   intTo 可以根据API文档进行观看使用");
+        System.out.println("学习圈子：https://pd.qq.com/s/bgsawr8he");
+        System.out.println("官网地址：https://www.snailcatmall.com");
+        System.out.println("视频学习文档合集：https://space.bilibili.com/29826047/lists?sid=7051754&spm_id_from=333.788.0.0");
+        System.out.println("炫彩界面库官方API文档：http://8.138.59.98/xcgui/index.html");
+        System.out.println("JCEF浏览器组件官方文档：https://github.com/jcefmaven/jcefbuild/releases");
+        System.out.println("Java代码例子案例：https://pan.baidu.com/s/5nuqiuByVLOlAV4TfTIT25g");
+        System.out.println("如果出现 java.lang.OutOfMemoryError: Java heap space 内存不足 配置运行时的VM 参数 ： -encoding utf-8 -charset utf-8 -XX:-UseGCOverheadLimit -Xms1T -Xmx1T  -XX:MaxPermSize=1T");
+        System.out.println("如果出现 Can't find dependent libraries  请将jar包中对应的系统版本号的 jawt.dll 文件放在java.exe的运行目录下，或者从java目录下直接复制到这个位置下即可，因为界面库依赖了Swing库");
+        System.out.println("======================================================");
+        System.out.println("生产环境：PathFileJSCM.setDebugFile32(PathFileJSCM.getJarPath()+\"demo\\\\x86\\\\\");\n" +
+                "        PathFileJSCM.setDebugFile64(PathFileJSCM.getJarPath()+\"demo\\\\x64\\\\\");\n" +
+                "        PathFileJSCM.setIsDebug(false);");
+        System.out.println("======================================================");
+        System.out.println("开发环境：PathFileJSCM.setDebugFile32(\"C:\\\\Users\\\\www10\\\\IdeaProjects\\\\scmJnaApi\\\\Application\\\\JscmOneToOne\\\\Jscm框架完整附属包V1.1.2\\\\x86\\\\\");\n" +
+                "        PathFileJSCM.setDebugFile64(\"C:\\\\Users\\\\www10\\\\IdeaProjects\\\\scmJnaApi\\\\Application\\\\JscmOneToOne\\\\Jscm框架完整附属包V1.1.2\\\\x64\\\\\");\n" +
+                "        PathFileJSCM.setIsDebug(true);");
+```
 
 ## 环境配置
 
