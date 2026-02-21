@@ -13529,6 +13529,253 @@ public class ModuleOperationUtilsJNI {
      */
     public static native boolean XC_PostMessage(int hWindow, long msg, long wParam, long lParam);
 
+    //======================================================  第三方的界面功能库 ==========================================================
+
+    /**
+     * 加载系统光标
+     * @param systemCursorId 系统光标ID  WindowsCursor.HAND.getHandleValue()
+     * @return 返回光标句柄
+     */
+    public static native long XC_LoadCursor(long systemCursorId);
+
+    /**
+     * RC资源查找图标
+     * @param hModule 模块句柄
+     * @param pName 图标名称  资源名称(字符串), 如果资源名称为数字, 请使用"RC资源查找图标从ID()"   HICON  hIcon1 = RC资源查找图标("IDC_ID1")
+     * @return 图标句柄
+     */
+    public static native long RC_findIcon(long hModule,String pName);
+    /**
+     * RC资源查找图标
+     * @param hModule 模块句柄
+     * @param pName 图标名称  资源名称(字符串), 如果资源名称为数字, 请使用"RC资源查找图标从ID()"   HICON  hIcon1 = RC资源查找图标("IDC_ID1")
+     * @return 图标句柄
+     */
+    public static native long RC_findIcon(int hModule,String pName);
+
+    /**
+     * RC资源查找图标从ID
+     * @param hModule 模块句柄
+     * @param id 图标名称  资源名称(字符串), 如果资源名称为数字, 请使用"RC资源查找图标从ID()"   HICON  hIcon1 = RC资源查找图标从ID(101)
+     * @return 图标句柄
+     */
+    public static native long RC_findIconByID(long hModule,int id);
+    /**
+     * RC资源查找图标从ID
+     * @param hModule 模块句柄
+     * @param id 图标名称  资源名称(字符串), 如果资源名称为数字, 请使用"RC资源查找图标从ID()"   HICON  hIcon1 = RC资源查找图标从ID(101)
+     * @return 图标句柄
+     */
+    public static native long RC_findIconByID(int hModule,int id);
+
+    /**
+     * RC资源查找文件
+     * @param pName 资源名称(字符串), 如果资源名称为数字, 请使用"RC资源查找文件从ID()"
+     * @param outSize 返回资源大小(字节为单位)
+     * @param hModule RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param type 资源类型, 在RC资源中指定的类型名称, 一般普通文件"RT_RCDATA"
+     * @return 文件句柄
+     */
+    public static native long RC_findFile(String pName,byte[] outSize,long hModule,String type);
+    /**
+     * RC资源查找文件
+     * @param pName 资源名称(字符串), 如果资源名称为数字, 请使用"RC资源查找文件从ID()"
+     * @param outSize 返回资源大小(字节为单位)
+     * @param hModule RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param type 资源类型, 在RC资源中指定的类型名称, 一般普通文件"RT_RCDATA"
+     * @return 文件句柄
+     */
+    public static native int RC_findFile(String pName,byte[] outSize,int hModule,String type);
+
+    /**
+     * RC资源查找文件从ID
+     * @param id 资源ID(数字型), 如果资源名称为字符串, 请使用"RC资源查找文件()"    RC资源查找文件从ID(101, &数据大小, NULL, "PNG")
+     * @param outSize 返回资源大小(字节为单位)
+     * @param hModule RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param type 资源类型, 在RC资源中指定的类型名称, 一般普通文件"RT_RCDATA"
+     * @return 文件句柄
+     */
+    public static native long RC_findFileByID(int id,byte[] outSize,long hModule,String type);
+    /**
+     * RC资源查找文件从ID
+     * @param id 资源ID(数字型), 如果资源名称为字符串, 请使用"RC资源查找文件()"    RC资源查找文件从ID(101, &数据大小, NULL, "PNG")
+     * @param outSize 返回资源大小(字节为单位)
+     * @param hModule RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param type 资源类型, 在RC资源中指定的类型名称, 一般普通文件"RT_RCDATA"
+     * @return 文件句柄
+     */
+    public static native int RC_findFileByID(int id,byte[] outSize,int hModule,String type);
+
+    /**
+     * RC资源查找文件到字节集
+     * RC资源查找文件到字节集("IDI_PNG1",  NULL, "PNG")
+     * @param pName 资源名称(字符串), 如果资源名称为数字, 请使用"RC资源查找文件到字节集从ID"
+     * @param outSize 返回大小
+     * @param dwSize 初始化长度
+     * @param hModule  RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param pResType  资源类型, 在RC资源中指定的类型名称, 一般普通文件"RT_RCDATA"
+     * @return 字节数组
+     */
+    public static native byte[] RC_findFileToBytes(String pName,byte[] outSize,int dwSize,long hModule,String pResType);
+
+    /**
+     * RC资源查找文件到字节集
+     * RC资源查找文件到字节集("IDI_PNG1",  NULL, "PNG")
+     * @param pName 资源名称(字符串), 如果资源名称为数字, 请使用"RC资源查找文件到字节集从ID"
+     * @param outSize 返回大小
+     * @param dwSize 初始化长度
+     * @param hModule  RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param pResType  资源类型, 在RC资源中指定的类型名称, 一般普通文件"RT_RCDATA"
+     * @return 字节数组
+     */
+    public static native byte[] RC_findFileToBytes(String pName,byte[] outSize,int dwSize,int hModule,String pResType);
+
+    /**
+     * RC资源查找文件到字节集从ID
+     * RC资源查找文件到字节集从ID(101,  NULL, "PNG")
+     * @param id 资源ID(数字型), 如果资源名称为字符串, 请使用"RC资源查找文件到字节集()"
+     * @param outSize 返回大小
+     * @param dwSize 初始化长度
+     * @param hModule  RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param pResType  资源类型, 在RC资源中指定的类型名称, 一般普通文件"RT_RCDATA"
+     * @return 字节数组
+     */
+    public static native byte[] RC_findFileToBytesByID(int id,byte[] outSize,int dwSize,int hModule,String pResType);
+
+    /**
+     * RC资源查找文件到字节集从ID
+     * RC资源查找文件到字节集从ID(101,  NULL, "PNG")
+     * @param id 资源ID(数字型), 如果资源名称为字符串, 请使用"RC资源查找文件到字节集()"
+     * @param outSize 返回大小
+     * @param dwSize 初始化长度
+     * @param hModule  RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param pResType  资源类型, 在RC资源中指定的类型名称, 一般普通文件"RT_RCDATA"
+     * @return 字节数组
+     */
+    public static native byte[] RC_findFileToBytesByID(int id,byte[] outSize,int dwSize,long hModule,String pResType);
+
+    /**
+     * RC资源查找图标2
+     * @param hModule  RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param pName 资源名称(字符串), 如果资源名称为数字, 请使用"RC资源查找图标2从ID()"
+     * @param cx  指定匹配图标的宽度, 如果为 0，则使用图像的原始宽度
+     * @param cy  指定匹配图标的高度, 如果为 0，则使用图像的原始高度
+     * @return 图标句柄
+     */
+    public static native long RC_findIcon2(int hModule,String pName,int cx,int cy);
+    /**
+     * RC资源查找图标2
+     * @param hModule  RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param pName 资源名称(字符串), 如果资源名称为数字, 请使用"RC资源查找图标2从ID()"
+     * @param cx  指定匹配图标的宽度, 如果为 0，则使用图像的原始宽度
+     * @param cy  指定匹配图标的高度, 如果为 0，则使用图像的原始高度
+     * @return 图标句柄
+     */
+    public static native long RC_findIcon2(long hModule,String pName,int cx,int cy);
+
+
+    /**
+     * RC资源查找图标2从ID
+     * @param hModule  RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param id 资源ID(数字型), 如果资源名称为字符串, 请使用"RC资源查找图标2()"
+     * @param cx  指定匹配图标的宽度, 如果为 0，则使用图像的原始宽度
+     * @param cy  指定匹配图标的高度, 如果为 0，则使用图像的原始高度
+     * @return 图标句柄
+     */
+    public static native long RC_findIcon2ByID(long hModule,int id,int cx,int cy);
+
+    /**
+     * RC资源查找图标2从ID
+     * @param hModule  RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param id 资源ID(数字型), 如果资源名称为字符串, 请使用"RC资源查找图标2()"
+     * @param cx  指定匹配图标的宽度, 如果为 0，则使用图像的原始宽度
+     * @param cy  指定匹配图标的高度, 如果为 0，则使用图像的原始高度
+     * @return 图标句柄
+     */
+    public static native long RC_findIcon2ByID(int hModule,int id,int cx,int cy);
+
+    /**
+     * RC资源查找光标
+     * @param hModule RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param pName 鼠标资源名称(字符串), 如果资源名称为数字, 请使用"RC资源查找图标2从ID()"
+     * @return 鼠标句柄
+     */
+    public static native long RC_findCursor(int hModule,String pName);
+    /**
+     * RC资源查找光标
+     * @param hModule RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param pName 鼠标资源名称(字符串), 如果资源名称为数字, 请使用"RC资源查找图标2从ID()"
+     * @return 鼠标句柄
+     */
+    public static native long RC_findCursor(long hModule,String pName);
+
+    /**
+     * RC资源查找光标从ID
+     * @param hModule RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param id 资源ID(数字型), 如果资源名称为字符串, 请使用"RC资源查找光标()"
+     * @return 鼠标句柄
+     */
+    public static native long RC_findCursorByID(long hModule,int id);
+
+    /**
+     * RC资源查找光标从ID
+     * @param hModule RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param id 资源ID(数字型), 如果资源名称为字符串, 请使用"RC资源查找光标()"
+     * @return 鼠标句柄
+     */
+    public static native long RC_findCursorByID(int hModule,int id);
+
+    /**
+     * RC资源查找位图
+     * @param hModule RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param pName  资源名称(字符串), 如果资源名称为数字, 请使用"RC资源查找位图从ID()"
+     * @return 位图句柄
+     */
+    public static native long RC_findBitmap(int hModule,String pName);
+
+    /**
+     * RC资源查找位图
+     * @param hModule RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param pName  资源名称(字符串), 如果资源名称为数字, 请使用"RC资源查找位图从ID()"
+     * @return 位图句柄
+     */
+    public static native long RC_findBitmap(long hModule,String pName);
+
+    /**
+     * RC资源查找位图
+     * @param hModule RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param id  资源名称(字符串), 如果资源名称为数字, 请使用"RC资源查找位图从ID()"
+     * @return 位图句柄
+     */
+    public static native long RC_findBitmap(int hModule,int id);
+
+    /**
+     * RC资源查找位图
+     * @param hModule RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param id  资源名称(字符串), 如果资源名称为数字, 请使用"RC资源查找位图从ID()"
+     * @return 位图句柄
+     */
+    public static native long RC_findBitmap(long hModule,int id);
+
+    /**
+     * RC资源查找字符串
+     * @param hModule RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param id 资源ID(数字型), 如果资源名称为字符串, 请使用"RC资源查找字符串()"
+     * @param dwSize 字符串长度
+     * @return 字符串字节数组
+     */
+    public static native long RC_findString(long hModule,int id,int dwSize);
+
+
+    /**
+     * RC资源查找字符串
+     * @param hModule RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
+     * @param id 资源ID(数字型), 如果资源名称为字符串, 请使用"RC资源查找字符串()"
+     * @param dwSize 字符串长度
+     * @return 字符串字节数组
+     */
+    public static native long RC_findString(int hModule,int id,int dwSize);
+
     //================================================================================================================================
 
 
