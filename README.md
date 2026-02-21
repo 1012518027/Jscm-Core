@@ -1,14 +1,3 @@
----
-AIGC:
-    ContentProducer: Minimax Agent AI
-    ContentPropagator: Minimax Agent AI
-    Label: AIGC
-    ProduceID: f6b8efbc7779bc859b5a2642c167c9f9
-    PropagateID: f6b8efbc7779bc859b5a2642c167c9f9
-    ReservedCode1: 3045022051e484c3446ca8e3c8c4a7837942e224b7b58304ffaf16472bce4b97a99bc137022100e13a05045a7319c42923397c6e700f2afde98afdf8ebfc6b3479404a9201608e
-    ReservedCode2: 304402206f9eaa41be61233ebbfc6d050d83a6f164be960c0816a3727373d8d3c383d045022010322748c1c6c763b7eca57785524bb6a61098c9c3a39b0dfa62e1d2bf7ca294
----
-
 # JSCM框架完整API文档
 
 ## 框架概述
