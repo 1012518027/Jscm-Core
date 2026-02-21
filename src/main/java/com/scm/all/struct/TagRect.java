@@ -1,0 +1,28 @@
+package com.scm.all.struct;
+
+public class TagRect {
+    public int left;
+    public int top;
+    public int right;
+    public int bottom;
+
+    public TagRect() {
+    }
+
+    public TagRect(int left, int top, int right, int bottom) {
+        this.left = left;
+        this.top = top;
+        this.right = right;
+        this.bottom = bottom;
+    }
+
+    @Override
+    public String toString() {
+        return "tagRECT{" +
+                "left=" + left +
+                ", top=" + top +
+                ", right=" + right +
+                ", bottom=" + bottom +
+                '}';
+    }
+}

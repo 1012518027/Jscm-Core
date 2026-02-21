@@ -1,0 +1,424 @@
+// Created by Microsoft (R) C/C++ Compiler Version 14.00.24234.1 (dffc7f20).
+//
+// e:\炫彩ide-3.3.8-(2023-05-04)\data\xc-module\常规\锐浪报表\示例\模块示例\xc-锐浪报表\debug\obj\gregn.tlh
+//
+// C++ source equivalent of Win32 type library gregn.tlb
+// compiler-generated file created 01/06/26 at 22:37:45 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("4018f953-1bfe-441e-8a04-dc8ba1ff060e"))
+/* LIBID */ __gregn6Lib;
+struct __declspec(uuid("330f80f5-4568-4f70-bfcb-683d3b90febb"))
+/* dispinterface */ _IGridppReportEvents;
+struct __declspec(uuid("f803ae1d-b578-490a-a1fe-38976ad2b625"))
+/* dual interface */ IGRGroup;
+struct __declspec(uuid("07120975-b963-4f85-9b4d-0ac979febb5d"))
+/* dual interface */ IGRObject;
+struct __declspec(uuid("cb11f828-a97b-4bc3-9b7a-9d2ddeb1c229"))
+/* dual interface */ IGRDetailGrid;
+struct __declspec(uuid("23f65787-d22b-4ca6-ba49-d22b63ca353a"))
+/* dual interface */ IGRColumnContent;
+struct __declspec(uuid("c765e825-5f52-44cb-aab6-fa89376da4c0"))
+/* dual interface */ IGRColumnSection;
+struct __declspec(uuid("77fd1006-7067-41ff-a712-0f356a6ace8c"))
+/* dual interface */ IGRSection;
+enum tagGRSectionType;
+struct __declspec(uuid("d4708b2f-dc00-4ef6-9559-a5dd9e86047c"))
+/* dual interface */ IGRFont;
+struct __declspec(uuid("48636e6a-758e-46c0-b37a-c2a2cac9469a"))
+/* dual interface */ IGRControls;
+struct __declspec(uuid("07120975-b963-4f75-9b4d-0ac979febb5d"))
+/* dual interface */ IGRControl;
+enum tagGRControlType;
+enum tagGRBackStyle;
+struct __declspec(uuid("fcdb44d7-4e0b-4eb6-a1e2-092689e8a482"))
+/* dual interface */ IGRBorder;
+struct __declspec(uuid("c9ef8e78-8e3a-428c-93c5-f52e146cb6ff"))
+/* dual interface */ IGRPen;
+enum tagGRPenStyle;
+enum tagGRBorderStyle;
+enum tagGRAnchorStyle;
+enum tagGRDockStyle;
+enum tagGRCenterStyle;
+enum tagGRAlignColumnSideStyle;
+enum tagGRShiftMode;
+enum tagGRPrintType;
+enum tagGRDisplayCursor;
+struct __declspec(uuid("6a246ac9-1715-40b6-a483-de9f3e8da43c"))
+/* dual interface */ IGRTextBox;
+struct __declspec(uuid("4c56923d-4012-4d28-8283-1b294c5c2a06"))
+/* dual interface */ IGRTextFormat;
+enum tagGRTextAlign;
+enum tagGRTextOrientation;
+enum tagGRFieldType;
+struct __declspec(uuid("e66ebbf5-ed8d-44e7-8a6c-e6579adcc7d4"))
+/* dual interface */ IGRChart;
+struct __declspec(uuid("1d1e02b3-e1bd-4c84-95f8-bb19bbb481f0"))
+/* dual interface */ IGRChartAxis;
+enum tagGRLockType;
+struct __declspec(uuid("a1c0e90d-b75a-4ffd-a542-54c9e44785a6"))
+/* dual interface */ IGRChartSeriesCollection;
+struct __declspec(uuid("ca0a5cbe-7eec-44fd-abfd-fc65bfed8618"))
+/* dual interface */ IGRChartSeries;
+enum tagGRChartType;
+enum tagGRPointMarkerStyle;
+struct __declspec(uuid("93cd76f7-5439-437f-8fa5-a650f2ca773c"))
+/* dual interface */ IGRRecordset;
+struct __declspec(uuid("f00ce27d-d1e3-4ef6-9877-bf3233ebf551"))
+/* dual interface */ IGRFields;
+struct __declspec(uuid("04cea260-dd00-4954-a81f-f0a201343cb9"))
+/* dual interface */ IGRField;
+struct __declspec(uuid("45f9b62d-9e33-484a-bb3c-bd58007bdaa2"))
+/* dual interface */ IGRBinaryObject;
+struct __declspec(uuid("b4af4881-7230-4ae0-8d3a-02f96f339454"))
+/* dual interface */ IGRStaticBox;
+struct __declspec(uuid("c04a6143-7500-41ef-8062-bd89a0a92d40"))
+/* dual interface */ IGRShapeBox;
+enum tagGRShapeBoxType;
+enum tagGRLineType;
+struct __declspec(uuid("28845384-ed9f-4d2e-986e-d52ac37a108f"))
+/* dual interface */ IGRSystemVarBox;
+enum tagGRSystemVarType;
+struct __declspec(uuid("fe9aa791-4c55-4e06-a592-08d8df88a941"))
+/* dual interface */ IGRFieldBox;
+struct __declspec(uuid("24de1ebe-5d9c-40ec-a11a-21af7d0c0d36"))
+/* dual interface */ IGRSummaryBox;
+enum tagGRSummaryFun;
+struct __declspec(uuid("c04a6148-7500-41ef-8062-bd89a0a92d40"))
+/* dual interface */ IGRPictureBox;
+enum tagGRPictureAlignment;
+enum tagGRPictureSizeMode;
+enum tagGRPictureTransparentMode;
+enum tagGRPictureRotateMode;
+struct __declspec(uuid("17807bd9-44bc-4550-b104-c2a074786bff"))
+/* dual interface */ IGRPicture;
+enum tagGRPictureType;
+enum tagGRSystemImage;
+struct __declspec(uuid("c04a6148-7511-41ef-8062-bd89a0a92d40"))
+/* dual interface */ IGRRichTextBox;
+struct __declspec(uuid("39a2c13a-d695-44bd-8339-a94fa64cb62b"))
+/* dual interface */ IGRMemoBox;
+struct __declspec(uuid("cdaa7f5b-e100-49b7-93f2-6b66fc93be55"))
+/* dual interface */ IGRSubReport;
+struct __declspec(uuid("4fa44042-1421-46de-9aca-a44753ff06c6"))
+/* dual interface */ IGridppReport;
+struct __declspec(uuid("7fc1d3a0-693f-486e-bdf3-02e98f50f9f3"))
+/* dual interface */ IGRPageHeader;
+struct __declspec(uuid("aacdaa8b-5ebb-4cc7-bcb9-c300fe7184a5"))
+/* dual interface */ IGRPageFooter;
+struct __declspec(uuid("d40307c2-9342-4c0d-9734-a103418186fe"))
+/* dual interface */ IGRParameters;
+struct __declspec(uuid("23af6c8a-0f15-45e3-a10d-9373bb15ac86"))
+/* dual interface */ IGRParameter;
+enum tagGRParameterDataType;
+struct __declspec(uuid("6fa2be8f-b674-49a9-a081-fe3968ae8d8d"))
+/* dual interface */ IGRReportHeaders;
+struct __declspec(uuid("f82df93f-5ff2-40a6-b50b-016666ec08ca"))
+/* dual interface */ IGRReportHeader;
+struct __declspec(uuid("53e18537-559d-4ef2-94c3-47a1ef38100f"))
+/* dual interface */ IGRReportSection;
+enum tagGRNewPageStyle;
+struct __declspec(uuid("ce4b64d4-5b5c-4b74-8470-1cc62f8e9fc9"))
+/* dual interface */ IGRReportFooters;
+struct __declspec(uuid("b2cc2c43-cf42-4e38-bdbb-5c04df11793f"))
+/* dual interface */ IGRReportFooter;
+struct __declspec(uuid("01056f48-f4ab-4d9f-be45-614f3313717d"))
+/* dual interface */ IGRImageList;
+struct __declspec(uuid("17b23325-7316-4098-9fe3-b5a1c24db296"))
+/* dual interface */ IGRPrinter;
+enum tagGRPrintRangeType;
+enum tagGRPrintPageType;
+enum tagGRDuplexKind;
+enum tagGRPaperOrientation;
+enum tagGRPaperKind;
+enum tagGRPaperSourceKind;
+enum tagGRSheetPages;
+enum tagGRCollateKind;
+enum tagGRDrawRotation;
+struct __declspec(uuid("5eb6e1e6-00b9-4469-ab22-ee4375d70e39"))
+/* dual interface */ IGRGraphics;
+struct __declspec(uuid("fe08c5a0-22b5-4664-9daa-4bb97c2c0771"))
+/* dual interface */ IGRUtility;
+struct __declspec(uuid("95eb847d-6550-4fc7-a123-de050e0328aa"))
+/* dual interface */ IGRDateTime;
+enum tagGRStorageFormat;
+enum tagGRTextEncodeMode;
+enum tagGRUnit;
+enum tagGRScriptType;
+enum tagGRReportDisplayMode;
+struct __declspec(uuid("72a79692-2f9e-4fec-92cc-6b4a7375a3d6"))
+/* dual interface */ IGRColumn;
+struct __declspec(uuid("83cc68ef-b558-45bb-8023-6c4f3bdada7b"))
+/* dual interface */ IGRColumnTitleCell;
+struct __declspec(uuid("e2f421d7-73fa-462f-9bf5-7da3e512ca00"))
+/* dual interface */ IGRColumnCell;
+struct __declspec(uuid("e5561733-9cd9-4d47-ae6b-3cb10a3d6772"))
+/* dual interface */ IGRCellBase;
+struct __declspec(uuid("08513fc1-ccce-4603-8dd1-35ba1ca8d1cd"))
+/* dual interface */ IGRColumnTitle;
+struct __declspec(uuid("97502458-7024-4194-9598-5b62001d8c1a"))
+/* dual interface */ IGRColumnTitleCells;
+enum tagGRRepeatStyle;
+struct __declspec(uuid("bb12aebd-5839-4a5e-9944-65b6798381c8"))
+/* dual interface */ IGRColumnContentCell;
+enum tagGRPrintGenerateStyle;
+enum tagGRExportType;
+struct __declspec(uuid("5bcb27bb-9750-4b28-9384-77801fb0d4eb"))
+/* dual interface */ IGRSharePrintSetupObject;
+enum tagGRSharePrintSetupOption;
+struct __declspec(uuid("60eb191f-5e63-41e7-807f-c66ec7a8ef26"))
+/* dual interface */ IGRExportOption;
+struct __declspec(uuid("ebf161f0-f347-441a-9c0d-0aca7824793b"))
+/* dual interface */ IGRE2CellOption;
+struct __declspec(uuid("60eb191f-5e63-41e7-808f-c66ec7a8ef26"))
+/* dual interface */ IGRE2XLSOption;
+struct __declspec(uuid("3bb506ab-425b-43b0-bc82-28a61fccf686"))
+/* dual interface */ IGRE2TXTOption;
+struct __declspec(uuid("f5d15e31-fa9a-42be-be9c-8688e7d9d6a0"))
+/* dual interface */ IGRE2HTMOption;
+struct __declspec(uuid("f4aa885f-af9c-4032-a65a-f3dfd458c289"))
+/* dual interface */ IGRE2RTFOption;
+struct __declspec(uuid("273631dd-1cac-49e9-92ee-584f48921a1e"))
+/* dual interface */ IGRE2PDFOption;
+enum tagGRPDFDocPermission;
+struct __declspec(uuid("f623a5e8-4ae4-494e-975b-3c5404428625"))
+/* dual interface */ IGRE2CSVOption;
+struct __declspec(uuid("81727f33-8d8c-45dc-b525-07abdc5fb652"))
+/* dual interface */ IGRE2IMGOption;
+enum tagGRExportImageType;
+enum tagGRDocType;
+struct __declspec(uuid("c4aca069-b92c-401a-b175-354e00d538d9"))
+/* dual interface */ IGRLine;
+struct __declspec(uuid("530a8e53-dfd5-4b95-a4f3-636e00d801d8"))
+/* dual interface */ IGRBarcode;
+enum tagGRBarcodeType;
+enum tagGRStringAlignment;
+enum tagGRBarcodeCaptionPosition;
+enum tagGRBarcodeDirection;
+enum tagGRDtmxEncoding;
+enum tagGRDtmxMatrixSize;
+struct __declspec(uuid("5f9d573a-8350-4a94-bb9f-2d0fa787ec7c"))
+/* dual interface */ IGRFreeGrid;
+struct __declspec(uuid("8fe11b07-22dc-4691-85d7-0469364b4b46"))
+/* dual interface */ IGRFreeGridColumn;
+struct __declspec(uuid("5dabf9ad-2396-4c11-bfd7-a5ee39772954"))
+/* dual interface */ IGRFreeGridRow;
+struct __declspec(uuid("cd0a6964-d013-4db6-96c4-5b1de0db8f1c"))
+/* dual interface */ IGRFreeGridCell;
+struct __declspec(uuid("af39550b-2a23-418a-acec-812c70ea5a62"))
+/* dual interface */ IGRColumnContentCells;
+struct __declspec(uuid("42f6af5f-5fc4-4f44-9812-1fbd9224ce2c"))
+/* dual interface */ IGRColumns;
+struct __declspec(uuid("488b2328-67c0-42d1-a133-303ff60d8ae2"))
+/* dual interface */ IGRGroups;
+struct __declspec(uuid("c3112650-36d2-4928-9d6c-c0a21ccc1eba"))
+/* dual interface */ IGRCrossTab;
+enum tagGRPeriodType;
+enum tagGRPageColumnDirection;
+enum tagGRColumnPrintAdaptMethod;
+struct __declspec(uuid("5c2fc87f-12f8-4a09-8a4a-792671c03c74"))
+/* dual interface */ IGRGroupHeader;
+struct __declspec(uuid("36971202-d715-4afc-83d4-7c0ddd8872e8"))
+/* dual interface */ IGRGroupSection;
+enum tagGRNewPageColumnStyle;
+enum tagGROCGroupHeaderVAlign;
+enum tagGRGrpKpTogetherStyle;
+struct __declspec(uuid("b753063d-aeba-4e5e-b53a-f89b68f1f622"))
+/* dual interface */ IGRGroupFooter;
+struct __declspec(uuid("0574abeb-b0da-465d-9eb7-286c00f3628f"))
+/* dual interface */ IGRPrintViewer;
+enum tagGRViewerBorderStyle;
+enum tagGRPreviewEditMode;
+enum tagGRPrintViewMode;
+enum tagGRToolControlType;
+enum tagGRPrintViewerOption;
+struct __declspec(uuid("2564dce8-fedb-4eb6-b7f9-5026f7f1041e"))
+/* dispinterface */ _IGRDisplayViewerEvents;
+enum tagGRShiftState;
+enum tagGRMouseButton;
+enum tagGRToolControlType2;
+struct __declspec(uuid("a9e920a1-c722-4a81-9fcf-4d5ebffa21f4"))
+/* dispinterface */ _IGRPrintViewerEvents;
+struct /* coclass */ GridppReport;
+struct /* coclass */ GRDisplayViewer;
+struct __declspec(uuid("fba070ab-385f-4988-b7a1-ce6b72799b48"))
+/* dual interface */ IGRDisplayViewer;
+enum tagGRDisplayViewerOption;
+struct /* coclass */ GRDisplayViewerProps;
+struct /* coclass */ GRPrintViewer;
+struct /* coclass */ GRPrintViewerProps;
+typedef enum tagGRSectionType GRSectionType;
+typedef enum tagGRControlType GRControlType;
+typedef enum tagGRBackStyle GRBackStyle;
+typedef enum tagGRPenStyle GRPenStyle;
+typedef enum tagGRBorderStyle GRBorderStyles;
+typedef enum tagGRAnchorStyle GRAnchorStyles;
+typedef enum tagGRDockStyle GRDockStyle;
+typedef enum tagGRCenterStyle GRCenterStyle;
+typedef enum tagGRAlignColumnSideStyle GRAlignColumnStyle;
+typedef enum tagGRShiftMode GRShiftMode;
+typedef enum tagGRPrintType GRPrintType;
+typedef enum tagGRDisplayCursor GRDisplayCursor;
+typedef enum tagGRTextAlign GRTextAlign;
+typedef enum tagGRTextOrientation GRTextOrientation;
+typedef enum tagGRFieldType GRFieldType;
+typedef enum tagGRLockType GRLockType;
+typedef enum tagGRChartType GRChartType;
+typedef enum tagGRPointMarkerStyle GRPointMarkerStyle;
+#if !defined(_WIN64)
+typedef __w64 long LONG_PTR;
+#else
+typedef __int64 LONG_PTR;
+#endif
+typedef enum tagGRShapeBoxType GRShapeType;
+typedef enum tagGRLineType GRLineType;
+typedef enum tagGRSystemVarType GRSystemVarType;
+typedef enum tagGRSummaryFun GRSummaryFun;
+typedef enum tagGRPictureAlignment GRPictureAlignment;
+typedef enum tagGRPictureSizeMode GRPictureSizeMode;
+typedef enum tagGRPictureTransparentMode GRPictureTransparentMode;
+typedef enum tagGRPictureRotateMode GRPictureRotateMode;
+typedef enum tagGRPictureType GRPictureType;
+typedef enum tagGRSystemImage GRSystemImage;
+typedef enum tagGRParameterDataType GRParameterDataType;
+typedef enum tagGRNewPageStyle GRNewPageStyle;
+typedef enum tagGRPrintRangeType GRPrintRangeType;
+typedef enum tagGRPrintPageType GRPrintPageType;
+typedef enum tagGRDuplexKind GRDuplexKind;
+typedef enum tagGRPaperOrientation GRPaperOrientation;
+typedef enum tagGRPaperKind GRPaperKind;
+typedef enum tagGRPaperSourceKind GRPaperSourceKind;
+typedef enum tagGRSheetPages GRSheetPages;
+typedef enum tagGRCollateKind GRCollateKind;
+typedef enum tagGRDrawRotation GRDrawRotation;
+typedef enum tagGRStorageFormat GRStorageFormat;
+typedef enum tagGRTextEncodeMode GRTextEncodeMode;
+typedef enum tagGRUnit GRUnit;
+typedef enum tagGRScriptType GRScriptType;
+typedef enum tagGRReportDisplayMode GRReportDisplayMode;
+typedef enum tagGRRepeatStyle GRRepeatStyle;
+typedef enum tagGRPrintGenerateStyle GRPrintGenerateStyle;
+typedef enum tagGRExportType GRExportType;
+typedef enum tagGRSharePrintSetupOption GRSharePrintSetupOption;
+typedef enum tagGRPDFDocPermission GRPDFDocPermission;
+typedef enum tagGRExportImageType GRExportImageType;
+typedef enum tagGRDocType GRDocType;
+typedef enum tagGRBarcodeType GRBarcodeType;
+typedef enum tagGRStringAlignment GRStringAlignment;
+typedef enum tagGRBarcodeCaptionPosition GRBarcodeCaptionPosition;
+typedef enum tagGRBarcodeDirection GRBarcodeDirection;
+typedef enum tagGRDtmxEncoding GRDtmxEncoding;
+typedef enum tagGRDtmxMatrixSize GRDtmxMatrixSize;
+typedef enum tagGRPeriodType GRPeriodType;
+typedef enum tagGRPageColumnDirection GRPageColumnDirection;
+typedef enum tagGRColumnPrintAdaptMethod GRColumnPrintAdaptMethod;
+typedef enum tagGRNewPageColumnStyle GRNewPageColumnStyle;
+typedef enum tagGROCGroupHeaderVAlign GROCGroupHeaderVAlign;
+typedef enum tagGRGrpKpTogetherStyle GRGrpKpTogetherStyle;
+typedef enum tagGRViewerBorderStyle GRViewerBorderStyle;
+typedef enum tagGRPreviewEditMode GRPreviewEditMode;
+typedef enum tagGRPrintViewMode GRPrintViewMode;
+typedef enum tagGRToolControlType GRToolControlType;
+typedef enum tagGRPrintViewerOption GRPrintViewerOption;
+typedef enum tagGRShiftState GRShiftStates;
+typedef enum tagGRMouseButton GRMouseButton;
+typedef enum tagGRToolControlType2 GRToolControlType2;
+typedef enum tagGRDisplayViewerOption GRDisplayViewerOption;
+
+
+//
+// Smart pointer typedef declarations
+//
+
+
+_COM_SMARTPTR_TYPEDEF(_IGridppReportEvents, __uuidof(_IGridppReportEvents));
+_COM_SMARTPTR_TYPEDEF(IGRObject, __uuidof(IGRObject));
+_COM_SMARTPTR_TYPEDEF(IGRFont, __uuidof(IGRFont));
+_COM_SMARTPTR_TYPEDEF(IGRPen, __uuidof(IGRPen));
+_COM_SMARTPTR_TYPEDEF(IGRBorder, __uuidof(IGRBorder));
+_COM_SMARTPTR_TYPEDEF(IGRTextFormat, __uuidof(IGRTextFormat));
+_COM_SMARTPTR_TYPEDEF(IGRChartAxis, __uuidof(IGRChartAxis));
+_COM_SMARTPTR_TYPEDEF(IGRChartSeries, __uuidof(IGRChartSeries));
+_COM_SMARTPTR_TYPEDEF(IGRChartSeriesCollection, __uuidof(IGRChartSeriesCollection));
+_COM_SMARTPTR_TYPEDEF(IGRParameter, __uuidof(IGRParameter));
+_COM_SMARTPTR_TYPEDEF(IGRParameters, __uuidof(IGRParameters));
+_COM_SMARTPTR_TYPEDEF(IGRPrinter, __uuidof(IGRPrinter));
+_COM_SMARTPTR_TYPEDEF(IGRDateTime, __uuidof(IGRDateTime));
+_COM_SMARTPTR_TYPEDEF(IGRSharePrintSetupObject, __uuidof(IGRSharePrintSetupObject));
+_COM_SMARTPTR_TYPEDEF(_IGRDisplayViewerEvents, __uuidof(_IGRDisplayViewerEvents));
+_COM_SMARTPTR_TYPEDEF(_IGRPrintViewerEvents, __uuidof(_IGRPrintViewerEvents));
+_COM_SMARTPTR_TYPEDEF(IGRGroup, __uuidof(IGRGroup));
+_COM_SMARTPTR_TYPEDEF(IGRGroups, __uuidof(IGRGroups));
+_COM_SMARTPTR_TYPEDEF(IGRDetailGrid, __uuidof(IGRDetailGrid));
+_COM_SMARTPTR_TYPEDEF(IGRSection, __uuidof(IGRSection));
+_COM_SMARTPTR_TYPEDEF(IGRColumnSection, __uuidof(IGRColumnSection));
+_COM_SMARTPTR_TYPEDEF(IGRPageHeader, __uuidof(IGRPageHeader));
+_COM_SMARTPTR_TYPEDEF(IGRPageFooter, __uuidof(IGRPageFooter));
+_COM_SMARTPTR_TYPEDEF(IGRReportSection, __uuidof(IGRReportSection));
+_COM_SMARTPTR_TYPEDEF(IGRReportHeader, __uuidof(IGRReportHeader));
+_COM_SMARTPTR_TYPEDEF(IGRReportHeaders, __uuidof(IGRReportHeaders));
+_COM_SMARTPTR_TYPEDEF(IGRReportFooter, __uuidof(IGRReportFooter));
+_COM_SMARTPTR_TYPEDEF(IGRReportFooters, __uuidof(IGRReportFooters));
+_COM_SMARTPTR_TYPEDEF(IGRGroupSection, __uuidof(IGRGroupSection));
+_COM_SMARTPTR_TYPEDEF(IGRGroupHeader, __uuidof(IGRGroupHeader));
+_COM_SMARTPTR_TYPEDEF(IGRGroupFooter, __uuidof(IGRGroupFooter));
+_COM_SMARTPTR_TYPEDEF(IGRColumnContent, __uuidof(IGRColumnContent));
+_COM_SMARTPTR_TYPEDEF(IGRControls, __uuidof(IGRControls));
+_COM_SMARTPTR_TYPEDEF(IGRCellBase, __uuidof(IGRCellBase));
+_COM_SMARTPTR_TYPEDEF(IGRFreeGridCell, __uuidof(IGRFreeGridCell));
+_COM_SMARTPTR_TYPEDEF(IGRControl, __uuidof(IGRControl));
+_COM_SMARTPTR_TYPEDEF(IGRTextBox, __uuidof(IGRTextBox));
+_COM_SMARTPTR_TYPEDEF(IGRStaticBox, __uuidof(IGRStaticBox));
+_COM_SMARTPTR_TYPEDEF(IGRShapeBox, __uuidof(IGRShapeBox));
+_COM_SMARTPTR_TYPEDEF(IGRSystemVarBox, __uuidof(IGRSystemVarBox));
+_COM_SMARTPTR_TYPEDEF(IGRFieldBox, __uuidof(IGRFieldBox));
+_COM_SMARTPTR_TYPEDEF(IGRSummaryBox, __uuidof(IGRSummaryBox));
+_COM_SMARTPTR_TYPEDEF(IGRRichTextBox, __uuidof(IGRRichTextBox));
+_COM_SMARTPTR_TYPEDEF(IGRMemoBox, __uuidof(IGRMemoBox));
+_COM_SMARTPTR_TYPEDEF(IGRLine, __uuidof(IGRLine));
+_COM_SMARTPTR_TYPEDEF(IGRBarcode, __uuidof(IGRBarcode));
+_COM_SMARTPTR_TYPEDEF(IGRChart, __uuidof(IGRChart));
+_COM_SMARTPTR_TYPEDEF(IGRRecordset, __uuidof(IGRRecordset));
+_COM_SMARTPTR_TYPEDEF(IGRCrossTab, __uuidof(IGRCrossTab));
+_COM_SMARTPTR_TYPEDEF(IGRFields, __uuidof(IGRFields));
+_COM_SMARTPTR_TYPEDEF(IGRField, __uuidof(IGRField));
+_COM_SMARTPTR_TYPEDEF(IGRBinaryObject, __uuidof(IGRBinaryObject));
+_COM_SMARTPTR_TYPEDEF(IGRPicture, __uuidof(IGRPicture));
+_COM_SMARTPTR_TYPEDEF(IGRPictureBox, __uuidof(IGRPictureBox));
+_COM_SMARTPTR_TYPEDEF(IGRImageList, __uuidof(IGRImageList));
+_COM_SMARTPTR_TYPEDEF(IGRGraphics, __uuidof(IGRGraphics));
+_COM_SMARTPTR_TYPEDEF(IGRUtility, __uuidof(IGRUtility));
+_COM_SMARTPTR_TYPEDEF(IGRSubReport, __uuidof(IGRSubReport));
+_COM_SMARTPTR_TYPEDEF(IGridppReport, __uuidof(IGridppReport));
+_COM_SMARTPTR_TYPEDEF(IGRPrintViewer, __uuidof(IGRPrintViewer));
+_COM_SMARTPTR_TYPEDEF(IGRColumn, __uuidof(IGRColumn));
+_COM_SMARTPTR_TYPEDEF(IGRColumnCell, __uuidof(IGRColumnCell));
+_COM_SMARTPTR_TYPEDEF(IGRColumnContentCell, __uuidof(IGRColumnContentCell));
+_COM_SMARTPTR_TYPEDEF(IGRColumnContentCells, __uuidof(IGRColumnContentCells));
+_COM_SMARTPTR_TYPEDEF(IGRColumns, __uuidof(IGRColumns));
+_COM_SMARTPTR_TYPEDEF(IGRColumnTitleCell, __uuidof(IGRColumnTitleCell));
+_COM_SMARTPTR_TYPEDEF(IGRColumnTitleCells, __uuidof(IGRColumnTitleCells));
+_COM_SMARTPTR_TYPEDEF(IGRColumnTitle, __uuidof(IGRColumnTitle));
+_COM_SMARTPTR_TYPEDEF(IGRDisplayViewer, __uuidof(IGRDisplayViewer));
+_COM_SMARTPTR_TYPEDEF(IGRExportOption, __uuidof(IGRExportOption));
+_COM_SMARTPTR_TYPEDEF(IGRE2CellOption, __uuidof(IGRE2CellOption));
+_COM_SMARTPTR_TYPEDEF(IGRE2XLSOption, __uuidof(IGRE2XLSOption));
+_COM_SMARTPTR_TYPEDEF(IGRE2TXTOption, __uuidof(IGRE2TXTOption));
+_COM_SMARTPTR_TYPEDEF(IGRE2HTMOption, __uuidof(IGRE2HTMOption));
+_COM_SMARTPTR_TYPEDEF(IGRE2RTFOption, __uuidof(IGRE2RTFOption));
+_COM_SMARTPTR_TYPEDEF(IGRE2PDFOption, __uuidof(IGRE2PDFOption));
+_COM_SMARTPTR_TYPEDEF(IGRE2CSVOption, __uuidof(IGRE2CSVOption));
+_COM_SMARTPTR_TYPEDEF(IGRE2IMGOption, __uuidof(IGRE2IMGOption));
+_COM_SMARTPTR_TYPEDEF(IGRFreeGrid, __uuidof(IGRFreeGrid));
+_COM_SMARTPTR_TYPEDEF(IGRFreeGridColumn, __uuidof(IGRFreeGridColumn));
+_COM_SMARTPTR_TYPEDEF(IGRFreeGridRow, __uuidof(IGRFreeGridRow));
+
+#pragma pack(pop)
