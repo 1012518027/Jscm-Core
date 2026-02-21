@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
-  <!-- grdes6x64.dll -->
-  <file name="grdes6x64.dll">
-    <typelib tlbid="{c5a16330-a084-48c9-bc0f-0d0b37a14123}" version="6.0" helpdir="" resourceid="0" flags="HASDISKIMAGE" />
-    <comClass clsid="{6edd80cb-9f08-4c71-b406-479e5cb80fce}" threadingModel="Apartment" tlbid="{c5a16330-a084-48c9-bc0f-0d0b37a14123}" progid="grdes.GRDesigner.6" description="Grid++Report Designer 6" />
-  </file>
-</assembly>
