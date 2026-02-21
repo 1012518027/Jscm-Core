@@ -23680,7 +23680,7 @@ public class ModuleOperationUtilsJNI {
      * 注册SnailCatMallTable
      * @return 返回布尔值
      */
-    private static native boolean report_Table_SnailCatMallTable();
+//    不对外开放接口
     /**
      * 取模板WEB注册状态
      * @return 返回整数
