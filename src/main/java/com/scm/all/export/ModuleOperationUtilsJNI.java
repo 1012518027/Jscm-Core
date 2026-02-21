@@ -23676,11 +23676,7 @@ public class ModuleOperationUtilsJNI {
      * @return 返回布尔值
      */
     public static native boolean report_Table_Register(String Registration);
-    /**
-     * 注册SnailCatMallTable
-     * @return 返回布尔值
-     */
-//    不对外开放接口
+
     /**
      * 取模板WEB注册状态
      * @return 返回整数
