@@ -35,6 +35,19 @@
       <version>1.6.2</version>
     </dependency>
 
+
+
+<!--    <dependency>-->
+<!--      <groupId>io.github.humbleui.skija</groupId>-->
+<!--      <artifactId>skija-windows</artifactId>-->
+<!--      <version>0.96.0</version>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>io.github.humbleui.skija</groupId>-->
+<!--      <artifactId>skija-shared</artifactId>-->
+<!--      <version>0.96.0</version>-->
+<!--    </dependency>-->
+
     <!--  rapidocr这个必须要引入     -->
     <!--  可前往maven中央仓库https://central.sonatype.com/artifact/io.github.mymonstercat/rapidocr/versions，查看版本      -->
 <!--    <dependency>-->
