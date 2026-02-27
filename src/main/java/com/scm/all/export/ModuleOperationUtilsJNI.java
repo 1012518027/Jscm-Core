@@ -138,6 +138,7 @@ public class ModuleOperationUtilsJNI {
     }
 
     //====================================================================================================================================
+
     public static native boolean WritePrivateProfile(String filePath, String sectionName, String ConfigurationItemName, String dataValue);
 
     public static native String ReadPrivateProfile(String filePath, String sectionName, String ConfigurationItemName);
@@ -31207,6 +31208,35 @@ public class ModuleOperationUtilsJNI {
      * @return 返回布尔值
      */
     public static native boolean report_Table_LoadDataFromXML(String XMLTextData);
+    /**
+     * 从URL载入数据
+     *
+     * @param URLTextData 文本参数
+     * @return 返回布尔值
+     */
+    public static native boolean report_Table_LoadDataFromURL(String URLTextData);
+
+    /**
+     * 从URL载入数据扩展
+     * @param URLTextData 文本参数
+     * @param URLTextParam 文本参数
+     * @return 返回布尔值
+     */
+    public static native boolean report_Table_LoadDataFromURLEx(String URLTextData, String URLTextParam);
+    /**
+     * 从URL导出XML
+     * @param URLTextData 文本参数
+     * @return 返回字符串
+     */
+    public static native String report_Table_ExtractXMLFromURL(String URLTextData);
+
+    /**
+     * 从从URL导出XML扩展
+     * @param URLTextData 文本参数
+     * @param URLTextParam 文本参数
+     * @return 返回字符串
+     */
+    public static native String report_Table_ExtractXMLFromURLEx(String URLTextData, String URLTextParam);
 
     /**
      * 加载数据准备
