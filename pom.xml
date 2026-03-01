@@ -7,15 +7,35 @@
   <groupId>com.scm</groupId>
   <artifactId>Jscm-Core</artifactId>
   <version>1.0-SNAPSHOT</version>
-
-  <name>Jscm-Core</name>
-
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>8</maven.compiler.source>
     <maven.compiler.target>8</maven.compiler.target>
   </properties>
+
+
+  <packaging>jar</packaging>
+  <name>${project.groupId}:${project.artifactId}</name>
+  <description>
+    JSCM框架
+    是基于Java Native Interface 底层技术,针对C/C++ 平台封装的Win32API接口进行与Java交互，支持X86/X64平台的框架引用技术支持，支持与Swing组件及java自身的SDK进行整合开发 作者本人:Snailcatmall  框架内置了炫彩GUI界面库框架、锐浪报表框架等大型C/C++框架，支持全新的Windows窗体开发、及报表开发能力，还包含DD键鼠驱动、幽灵键鼠驱动等硬件抽象层功能，同时提供了完整的编码转换工具类，支持UTF-8、Unicode、ASCII等多种编码格式的相互转换。框架还集成了CapStone反汇编引擎，支持内存特征码搜索和反汇编分析功能。 QQ群：128828632
+  </description>
+  <url>https://gitee.com/SnailcatMall/Jscm-Core-FrameWork</url>
+  <licenses>
+    <license>
+      <name>SnailCatMall</name>
+      <url>https://gitee.com/SnailcatMall/Jscm-Core-FrameWork</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>SnailCatMall</name>
+      <email>1012518027@qq.com</email>
+
+    </developer>
+  </developers>
+
 
   <dependencies>
     <dependency>
