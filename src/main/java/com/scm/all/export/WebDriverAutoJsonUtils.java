@@ -132,7 +132,7 @@ public class WebDriverAutoJsonUtils {
      * @return 返回google chrome版本
      */
     public static String getChromeVersionX64(){
-        return ByteUtils.bytesArrayToUtf8WideString(RegistryOperationUtilsX64.readByte("HKEY_CURRENT_USER\\SOFTWARE\\Google\\Chrome\\BLBeacon","version"));
+        return ByteUtils.bytesArrayToUtf8WideString(RegistryOperationUtilsX64.readByte("HKEY_CURRENT_USER\\SOFTWARE\\Google\\Chrome\\BLBeacon"));
     }
 
     /**
@@ -140,7 +140,7 @@ public class WebDriverAutoJsonUtils {
      * @return 返回google chrome版本
      */
     public static String getChromeVersionX32(){
-        return ByteUtils.bytesArrayToUtf8WideString(RegistryOperationUtilsX86.readByte("HKEY_CURRENT_USER\\SOFTWARE\\Google\\Chrome\\BLBeacon","version"));
+        return ByteUtils.bytesArrayToUtf8WideString(RegistryOperationUtilsX86.readByte("HKEY_CURRENT_USER\\SOFTWARE\\Google\\Chrome\\BLBeacon"));
     }
 
     /**
