@@ -328,10 +328,9 @@ public class RegistryOperationUtilsX86 {
     /**
      * 读注册表
      * @param RegistryGroup 注册表项
-     * @param KeyName 键名
      * @return 返回字节 字节转换通过BytesUtils类
      */
-    public static byte[] readByte(String RegistryGroup,String KeyName){
+    public static byte[] readByte(String RegistryGroup){
         byte[] lpcbMaxClassLen = new byte[4];
         int openRegx = openRegistryGroup(RegistryGroup,false);
         if(StringUtils.equals("",RegistryGroup)){

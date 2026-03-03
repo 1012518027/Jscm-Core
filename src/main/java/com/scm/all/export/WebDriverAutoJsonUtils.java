@@ -23,7 +23,7 @@ import java.util.zip.ZipInputStream;
 
 /**
  * 自动填表工具类 ，他会针对你的google版本去下载对应的驱动，剩下的就是你使用
- * 相应的jar包自己去配置
+ * 相应的jar包自己去配置    谷歌运行的时候加上  chrome.exe --remote-debugging-port=9222
  */
 public class WebDriverAutoJsonUtils {
 
