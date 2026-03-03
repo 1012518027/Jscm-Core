@@ -1,7 +1,6 @@
 package com.scm.x86.export;
 
 import com.scm.all.export.ModuleOperationUtilsJNI;
-import com.scm.all.pfunc.BreakpointCallBackX64;
 import com.scm.all.pfunc.BreakpointCallBackX86;
 
 public class DebugBreakPointX86 {

@@ -9,7 +9,6 @@ import java.io.*;
 import java.math.BigInteger;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.regex.Matcher;
@@ -560,23 +559,25 @@ public class ByteUtils {
         return null;
     }
 
-    /**
-     * UniCode 转 utf8
-     *
-     * @param textBytes UniCode 字节数组
-     * @return 返回字符串
-     */
     public static String uniCodeArrayToUtf8(byte[] textBytes) {
+        if (textBytes == null || textBytes.length < 2) {
+            // 如果长度不足2，直接返回空字符串
+            return "";
+        }
+
         try {
-            byte[] data = new byte[textBytes.length - 2];
-            for (int b = 0; b < textBytes.length - 2; b++) {
+            // 创建新数组时，确保长度至少为0
+            int actualLength = textBytes.length - 2;
+            byte[] data = new byte[actualLength];
+
+            for (int b = 0; b < actualLength; b++) {
                 data[b] = textBytes[b];
             }
             return new String(data, "UnicodeLittleUnmarked");
         } catch (Exception e) {
             e.printStackTrace();
+            return "";
         }
-        return "";
     }
 
 

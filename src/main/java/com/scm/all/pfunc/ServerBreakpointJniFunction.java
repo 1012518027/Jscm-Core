@@ -2,8 +2,6 @@ package com.scm.all.pfunc;
 
 import com.scm.all.export.ModuleOperationUtilsJNI;
 
-import java.util.HashMap;
-
 /**
  * 这是线程类
  */

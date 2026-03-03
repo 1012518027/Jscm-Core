@@ -2,7 +2,6 @@ package com.scm.all.export;
 
 import com.scm.all.pfunc.JscmCallBack;
 import com.scm.all.pfunc.SwingJFrameInfo;
-import com.scm.all.pfunc.WindowEventCallBack;
 import com.scm.all.pfunc.WindowSetGraduallyHideShowCallBack;
 import com.scm.all.struct.TagPoint;
 import com.scm.all.struct.TagRect;

@@ -7,7 +7,7 @@ public class TagRegisTryGroupInfo {
     public String Keys;
     public int types;
     public String typeName;
-    public String values;
+    public byte[] values;
 
     @Override
     public String toString() {

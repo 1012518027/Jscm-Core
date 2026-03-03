@@ -160,17 +160,20 @@ public class RegistryOperationUtilsX86 {
                         registrygroupinfo.types = ByteUtils.bytesArrayToInt(lpType);
                         registrygroupinfo.typeName = selectRegistryGroupKeyNameTypeString(RegistryGroup,key);
                         if(ByteUtils.bytesArrayToInt(lpType)==11){
-                            registrygroupinfo.values = "" + ByteUtils.hexToInt3(lpData);
+                            registrygroupinfo.values = lpData;
+//                            registrygroupinfo.values = "" + ByteUtils.hexToInt3(lpData);
                         }
                         if(ByteUtils.bytesArrayToInt(lpType)==4){
-
-                            registrygroupinfo.values = "" +ByteUtils.hexToInt4(lpData);
+                            registrygroupinfo.values = lpData;
+//                            registrygroupinfo.values = "" +ByteUtils.hexToInt4(lpData);
                         }
                         if(ByteUtils.bytesArrayToInt(lpType)==3){
-                            registrygroupinfo.values = "" +ByteUtils.bytesToHexString(lpData).substring(0,rev);
+                            registrygroupinfo.values = lpData;
+//                            registrygroupinfo.values = "" +ByteUtils.bytesToHexString(lpData).substring(0,rev);
                         }
                         if(ByteUtils.bytesArrayToInt(lpType)!=11 && ByteUtils.bytesArrayToInt(lpType)!=4 && ByteUtils.bytesArrayToInt(lpType)!=3){
-                            registrygroupinfo.values = "" +ByteUtils.bytesArrayToUtf8WideString(lpData);
+                            registrygroupinfo.values = lpData;
+//                            registrygroupinfo.values = "" +ByteUtils.bytesArrayToUtf8WideString(lpData);
                         }
                         registrygroupinfos.add(registrygroupinfo);
                     }
@@ -180,18 +183,20 @@ public class RegistryOperationUtilsX86 {
         ModuleOperationUtilsJNI.RegCloseKey(openRegx);
         return registrygroupinfos.size();
     }
+
+
     /**
-     * 获取注册表指定键名信息
+     * 获取注册表指定键名类型
      * @param RegistryGroup 注册项名  HKEY_CURRENT_USER\Control Panel\Desktop\Colors
      * @param KeyName 键名 ActiveBorder
-     * @return 返回类型  -1 失败
+     * @return 返回类型  数据字节
      */
     public static int selectRegistryGroupKeyNameType(String RegistryGroup, String KeyName){
         byte[] lpcbMaxClassLenPointer = new byte[4];
         int openRegx = openRegistryGroup(RegistryGroup,false);
         if(StringUtils.equals("",RegistryGroup)){
             ModuleOperationUtilsJNI.RegCloseKey(openRegx);
-            return  0;
+            return  -1;
         }
         if(openRegx != 0){
             int result = ModuleOperationUtilsJNI.RegQueryInfoKeyW(openRegx,lpcbMaxClassLenPointer,lpcbMaxClassLenPointer.length);
@@ -324,10 +329,9 @@ public class RegistryOperationUtilsX86 {
      * 读注册表
      * @param RegistryGroup 注册表项
      * @param KeyName 键名
-     * @param types 类型
      * @return 返回字节 字节转换通过BytesUtils类
      */
-    public static byte[] readByte(String RegistryGroup,String KeyName,int types){
+    public static byte[] readByte(String RegistryGroup,String KeyName){
         byte[] lpcbMaxClassLen = new byte[4];
         int openRegx = openRegistryGroup(RegistryGroup,false);
         if(StringUtils.equals("",RegistryGroup)){
@@ -343,8 +347,7 @@ public class RegistryOperationUtilsX86 {
                     byte[] lpData = new byte[len];
                     int rev = ModuleOperationUtilsJNI.MyRegEnumValueW(openRegx,i,lpType,lpData,len);
                     if(rev !=-1){
-                        String key = ByteUtils.bytesArrayToUtf8WideString(lpData);
-                        if(StringUtils.equals(key,KeyName)){
+                        if (lpData.length>0){
                             ModuleOperationUtilsJNI.RegCloseKey(openRegx);
                             return lpData;
                         }

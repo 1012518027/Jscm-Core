@@ -9,6 +9,12 @@
       <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.12.0" />
       <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
       <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.6.2" />
+      <element id="extracted-dir" path="F:/本地磁盘D/apache-maven-3.9.9/conf/Repository/com/fasterxml/jackson/core/jackson-annotations/2.19.2/jackson-annotations-2.19.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="F:/本地磁盘D/apache-maven-3.9.9/conf/Repository/com/fasterxml/jackson/core/jackson-core/2.19.2/jackson-core-2.19.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="F:/本地磁盘D/apache-maven-3.9.9/conf/Repository/com/fasterxml/jackson/core/jackson-databind/2.19.2/jackson-databind-2.19.2.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.19.2" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.19.2" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.19.2" />
     </root>
   </artifact>
 </component>

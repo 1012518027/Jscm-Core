@@ -16884,7 +16884,7 @@ public class ModuleOperationUtilsJNI {
     /**
      * RC资源查找文件从ID
      *
-     * @param id      资源ID(整数), 如果资源类型为字符串, 请使用"RC资源文件名()"    RC资源文件名的ID(101, &数据大小, NULL, "PNG")
+     * @param id 源ID(整数), 如果资源类型为字符串, 请使用RC资源文件名RC资源文件名的ID(101, 数据大小, NULL, PNG)
      * @param outSize 返回资源大小(字节为单位)
      * @param hModule RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
      * @param type    资源类型, 在RC资源中指定的类型名称, 一般普通文件"RT_RCDATA"
@@ -16895,7 +16895,7 @@ public class ModuleOperationUtilsJNI {
     /**
      * RC资源查找文件从ID
      *
-     * @param id      资源ID(整数), 如果资源类型为字符串, 请使用"RC资源文件名()"    RC资源文件名的ID(101, &数据大小, NULL, "PNG")
+     * @param id 资源ID(整数), 如果资源类型为字符串, 请使用RC资源文件名RC资源文件名的ID(101, 数据大小, NULL, PNG)
      * @param outSize 返回资源大小(字节为单位)
      * @param hModule RC资源所属模块, 如果指定NULL, 那么为当前EXE模块
      * @param type    资源类型, 在RC资源中指定的类型名称, 一般普通文件"RT_RCDATA"

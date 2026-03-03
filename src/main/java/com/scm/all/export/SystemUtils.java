@@ -1,5 +1,7 @@
 package com.scm.all.export;
 
+
+
 import com.scm.all.pfunc.KeyCodeCallBack;
 import com.scm.all.pfunc.ResponseEventCallBack;
 import com.scm.all.pfunc.ResponseEventCallBackRunnable;
@@ -8,7 +10,6 @@ import com.scm.all.struct.TagHotKeyInfoThree;
 import com.scm.all.struct.TagHotKeyInfoTow;
 import com.scm.all.struct.TagINPUT;
 import com.scm.all.struct.TagPoint;
-import org.apache.commons.lang3.StringUtils;
 
 import javax.imageio.ImageIO;
 import javax.swing.filechooser.FileSystemView;
@@ -20,12 +21,10 @@ import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.*;
-import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.*;
 import java.util.concurrent.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+
 
 /**
  * 本类将存放系统API选项
@@ -484,7 +483,7 @@ public class SystemUtils {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                            }
+            }
         }
 
         return Base64.getEncoder().encodeToString(data);
