@@ -1,6 +1,6 @@
 # JSCM 核心框架完全指南
 
-# 主要更新网站：https://gitee.com/SnailcatMall/projects
+# 主要更新网站：[https://gitee.com/SnailcatMall/projects](https://gitee.com/SnailcatMall/Jscm-Core-FrameWork)
 
 ## 框架概述
 
