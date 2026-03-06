@@ -1,5 +1,7 @@
 # JSCM 核心框架完全指南
 
+# 主要更新网站：https://gitee.com/SnailcatMall/projects
+
 ## 框架概述
 
 **JSCM（Java System Control Management）** 是一套基于 Java JNI（Java Native Interface）技术构建的 Windows 系统底层操作框架。该框架为 Java 开发者提供了强大的 Windows 操作系统底层能力访问接口，涵盖了窗口管理、进程线程控制、内存操作、注册表读写、硬件驱动模拟等核心功能。JSCM 框架的设计参考了精易模块、超级模块、乐易模块等成熟产品的架构思想，旨在为 Java 语言在 Windows 平台上的系统级开发提供一站式解决方案。
